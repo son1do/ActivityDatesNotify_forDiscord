@@ -1,9 +1,9 @@
 function checkActivityDateAndNotifyDiscord() {
   // Input Discord WebhookURL
   // Please Input DiscordBot WebhookURL below
-  const webhookUrl = ""　//SSS
+  const webhookUrl = ""
  
- // Get "予定表" sheet
+  // Get "予定表" sheet
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = spreadsheet.getSheetByName("予定表");
   
