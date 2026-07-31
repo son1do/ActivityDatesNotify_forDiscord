@@ -15,7 +15,6 @@ function checkWeekActivityDatesAndNotifyDiscord() {
   const lastRow = sheet.getLastRow();
   if (lastRow < 2) return;
   
-  // --- 今日を含めた一週間分（7日間）の日付リストを作成 ---
   const today = new Date();
   today.setHours(0, 0, 0, 0); // reset hours
   
@@ -55,7 +54,6 @@ function checkWeekActivityDatesAndNotifyDiscord() {
 
   if (fieldMessages.length > 0) {
     
-    // 枠内の本文
     const description = `対象期間: **${startDateStr} 〜 ${endDateStr}**\n\n` + fieldMessages.join("\n");
 
     const payload = {
